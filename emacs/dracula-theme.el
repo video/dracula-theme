@@ -65,7 +65,7 @@
    `(font-lock-warning-face ((,class (:foreground ,warning :background ,bg2))))
    `(region ((,class (:background ,str :foreground ,bg1))))
    `(highlight ((,class (:foreground ,fg3 :background ,bg3))))
-   `(hl-line ((,class (:background  ,nil))))
+   `(hl-line ((,class (:background  ,bg5))))
    `(fringe ((,class (:background ,bg1 :foreground ,fg4))))
    `(cursor ((,class (:background ,fg3))))
    `(show-paren-match-face ((,class (:background ,warning))))
@@ -239,7 +239,10 @@
    `(enh-ruby-op-face ((,class (:foreground ,keyword))))
    `(enh-ruby-heredoc-delimiter-face ((,class (:foreground ,str))))
    `(enh-ruby-string-delimiter-face ((,class (:foreground ,str))))
-   `(enh-ruby-regexp-delimiter-face ((,class (:foreground ,str))))))
+   `(enh-ruby-regexp-delimiter-face ((,class (:foreground ,str))))
+   `(anzu-mode-line ((,class (:foreground ,keyword))))
+   `(anzu-replace-to ((,class (:foreground ,str))))
+   ))
 
 ;;;###autoload
 (when load-file-name
